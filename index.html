@@ -22,39 +22,14 @@
             margin: 20px auto;
             box-shadow: 0 0 25px #B8860B;
         }
-        h1 { 
-            color: #FFD700;
-            font-size: 2.2em;
-            margin-bottom: 5px;
-            text-shadow: 2px 2px 4px #000;
-        }
-        .location {
-            color: #FFD700;
-            font-size: 1.1em;
-            margin-bottom: 20px;
-        }
-        .info { 
-            font-size: 1.3em; 
-            margin: 20px 0; 
-            line-height: 1.8;
-            color: #FFFFFF; /* جعلنا النص أبيض لزيادة الوضوح مع لمسات ذهبية */
-            font-weight: bold;
-        }
+        h1 { color: #FFD700; font-size: 2.2em; margin-bottom: 5px; }
+        .location { color: #FFD700; font-size: 1.1em; margin-bottom: 20px; }
+        .info { font-size: 1.3em; margin: 20px 0; line-height: 1.8; color: #FFFFFF; font-weight: bold; }
         .highlight { color: #FFD700; }
-        .work-images {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-top: 25px;
-        }
-        .work-images img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 12px;
-            border: 2px solid #B8860B;
-            background: #1a1a1a;
-        }
+        
+        /* أزرار التنقل */
+        .btn-group { display: flex; flex-direction: column; gap: 10px; align-items: center; margin-top: 25px; }
+        
         .btn {
             display: inline-block;
             background-color: #B8860B;
@@ -62,17 +37,18 @@
             padding: 12px 25px;
             text-decoration: none;
             border-radius: 10px;
-            margin-top: 25px;
             font-weight: bold;
             font-size: 1.1em;
+            width: 80%;
+            max-width: 300px;
             transition: 0.3s;
         }
-        .footer {
-            margin-top: 20px;
-            font-size: 1.2em;
+        .btn-secondary {
+            background-color: transparent;
             color: #FFD700;
-            font-style: italic;
+            border: 2px solid #B8860B;
         }
+        .btn:hover { background-color: #FFD700; transform: scale(1.05); }
     </style>
 </head>
 <body>
@@ -83,20 +59,14 @@
         <div class="info">
             <span class="highlight">بيع وشراء الجوالات وجميع إكسسواراتها</span><br>
             يوجد لدينا: <span class="highlight">صيانة - برمجة - شرائح - رصيد</span><br>
-            أسعار مناسبة .. خدمة فورية<br>
-            <span class="highlight">وكل ما يتمناه العميل</span>
+            أسعار مناسبة .. خدمة فورية
         </div>
 
-        <div class="footer">فقط قم بزيارتنا</div>
-
-        <h3>📞 تواصل معنا: 783234925</h3>
-        
-        <div class="work-images">
-            <img src="https://via.placeholder.com/400x300/000000/D4AF37?text=Mobile+Sales" alt="بيع جوالات">
-            <img src="https://via.placeholder.com/400x300/000000/D4AF37?text=Accessories" alt="إكسسوارات">
+        <div class="btn-group">
+            <a href="rashid.html" class="btn btn-secondary">🔗 عرض خدماتنا بالتفصيل</a>
+            
+            <a href="https://wa.me/967783234925" class="btn">💬 تواصل معنا واتساب</a>
         </div>
-
-        <a href="https://wa.me/967783234925" class="btn">تواصل عبر الواتساب</a>
     </div>
 </body>
 </html>
